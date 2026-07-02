@@ -1,0 +1,20 @@
+@import "tailwindcss";
+/* Add this line to enable manual dark mode toggling in v4 */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Times New Roman", Times, serif;
+  --font-serif: "Times New Roman", Times, serif;
+}
+
+.bg-dots-light {
+  background-color: #F7F9FB;
+  background-image: radial-gradient(rgba(0, 32, 96, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-dots-dark {
+  background-color: #0f172a;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
