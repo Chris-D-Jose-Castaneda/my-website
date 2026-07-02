@@ -40,7 +40,7 @@ export default function SocialLinks() {
         className="transition-transform hover:scale-110 flex items-center justify-center"
       >
         <img 
-          src="/src/assets/tableau-icon.png" 
+          src="/assets/tableau-icon.png" 
           alt="Tableau Portfolio" 
           className="w-6 h-6 object-contain opacity-80 hover:opacity-100 transition-opacity dark:opacity-60 dark:hover:opacity-100"
         />
