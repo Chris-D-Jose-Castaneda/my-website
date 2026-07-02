@@ -74,7 +74,7 @@ const projects = [
   },
   {
     name: "My Website",
-    description: "Version II built using React, Vite, TailwindCSS, and React Router.",
+    description: "Version III built using React, Vite, TailwindCSS, and React Router.",
     tags: ["Web Development", "React", "TailwindCSS"],
     url: "https://github.com/Chris-D-Jose-Castaneda/my-portfolio",
     imgSrc: "/assets/portfolio.png",
