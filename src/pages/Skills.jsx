@@ -34,7 +34,7 @@ export default function Skills() {
   const navSections = [
     { id: 'core-competencies', label: 'Core Competencies' },
     { id: 'technical-proficiencies', label: 'Proficiencies' },
-    { id: 'finance-data', label: 'Finance Data' },
+    { id: 'finance-data', label: 'Financial Platforms' },
     { id: 'daily-read-listen', label: 'Daily Read & Listen' },
   ];
 
