@@ -30,7 +30,7 @@ const projects = [
     description: "Listed-home analytics for April 2025 with pricing, inventory, and geospatial views.",
     tags: ["Data Analysis", "Python", "EDA", "Time Series", "GIS"],
     url: "https://github.com/Chris-D-Jose-Castaneda/SWFL-Real-Estate-Analytical-Project",
-    imgSrc: "/src/assets/SWFL.png",
+    imgSrc: "/assets/SWFL.png",
     imgAlt: "SWFL Urban Housing analysis cover",
     pdfUrl: swflUrbanMarketsPdf,
     pdfLabel: "Read the report",
@@ -40,7 +40,7 @@ const projects = [
     description: "Sold-home forecasting over the past five years with interactive maps and stats.",
     tags: ["Machine Learning", "Data Analysis", "Python", "Time Series"],
     url: "https://github.com/Chris-D-Jose-Castaneda/SWFL_Analysis_V2",
-    imgSrc: "/src/assets/SWFL Forecasting Analysis.png",
+    imgSrc: "/assets/SWFL Forecasting Analysis.png",
     imgAlt: "SWFL Forecasting Analysis",
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     description: "Incorporates multi-asset monitoring and KPI tracking using a robust database infrastructure.",
     tags: ["Web Development", "Financial Modeling", "React", "APIs"],
     url: "https://equity-dashboard-analytics.vercel.app/",
-    imgSrc: "/src/assets/Equity_Analytics.png",
+    imgSrc: "/assets/Equity_Analytics.png",
     imgAlt: "Equity Dashboard Analytics",
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     description: "Streamlit app to load Excel universes and screen by EV/EBITDA, ROE, and more.",
     tags: ["Financial Modeling", "Data Analysis", "Python", "Excel"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Valuation-Screener",
-    imgSrc: "/src/assets/Valuation_Screener.png",
+    imgSrc: "/assets/Valuation_Screener.png",
     imgAlt: "Valuation Screener dashboard",
   },
   {
@@ -64,7 +64,7 @@ const projects = [
     description: "Match outcome and table projections for the 2025/26 season.",
     tags: ["Machine Learning", "Data Analysis", "Python", "Sports Analytics"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Premier_League_2025_26_Prediction",
-    imgSrc: "/src/assets/Cole_Palmer.png",
+    imgSrc: "/assets/Cole_Palmer.png",
     imgAlt: "Premier League model",
   },
   {
@@ -72,7 +72,7 @@ const projects = [
     description: "Track, analyze, and visualize grading data from a spreadsheet modeling course from the past 5 semesters.",
     tags: ["Data Analysis", "Machine Learning", "Python", "SQL"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Lead_Assistant_Grading_Analysis",
-    imgSrc: "/src/assets/CU_clocktower.png",
+    imgSrc: "/assets/CU_clocktower.png",
     imgAlt: "Lead Analysis",
     pdfUrl: gradingAnalysisPdf,
     pdfLabel: "Read the report",
@@ -82,7 +82,7 @@ const projects = [
     description: "FRED/Eikon pipelines, stress scoring, and scenario simulations with a Streamlit UI.",
     tags: ["Financial Modeling", "Data Analysis", "Python"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Macro-Credit-Stress-and-Sim",
-    imgSrc: "/src/assets/Macro-Credit Stressboard.png",
+    imgSrc: "/assets/Macro-Credit Stressboard.png",
     imgAlt: "Macro-Credit Stressboard & CFA",
     pdfUrl: macroeconomicDashboardPdf,
     pdfLabel: "Read the report",
@@ -92,7 +92,7 @@ const projects = [
     description: "Regime detection and cross-asset analytics with FRED/Eikon/Yfinance pipelines and a Streamlit UI.",
     tags: ["Financial Modeling", "Data Analysis", "Python"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Cross-Asset-Regime-Research",
-    imgSrc: "/src/assets/Macro_Credit_Radar.png",
+    imgSrc: "/assets/Macro_Credit_Radar.png",
     imgAlt: "Cross-Asset Regime Research",
   },
   {
@@ -100,7 +100,7 @@ const projects = [
     description: "Version II built using React, Vite, TailwindCSS, and React Router.",
     tags: ["Web Development", "React", "TailwindCSS"],
     url: "https://github.com/Chris-D-Jose-Castaneda/my-portfolio",
-    imgSrc: "/src/assets/portfolio.png",
+    imgSrc: "/assets/portfolio.png",
     imgAlt: "Portfolio Screenshot",
   },
   {
@@ -108,7 +108,7 @@ const projects = [
     description: "Real estate and data solutions for 100+ clients, including dashboards, automation, and market research.",
     tags: ["Web Development", "Data Analysis", "Automation"],
     url: "https://datalytics-tech.vercel.app/",
-    imgSrc: "/src/assets/Datalytics.png",
+    imgSrc: "/assets/Datalytics.png",
     imgAlt: "Datalytics-Tech cover",
   },
   {
@@ -116,7 +116,7 @@ const projects = [
     description: "Analyzing the oil markets and tracking commodity prices & how it affects my portfolio as well as expected outcomes.",
     tags: ["Financial Modeling", "Data Analysis", "Python", "Monte Carlo"],
     url: "https://github.com/Chris-D-Jose-Castaneda/SWFL-COST-Scenario/blob/main/Retail%20Fuel%20Pricing%20Report.pdf/",
-    imgSrc: "/src/assets/oil.png",
+    imgSrc: "/assets/oil.png",
     imgAlt: "Oil Tracking Analysis",
   },
   {
@@ -124,7 +124,7 @@ const projects = [
     description: "Analyzes the performance of Janus Henderson's overall value.",
     tags: ["Financial Modeling", "Data Analysis", "Tableau"],
     url: "https://public.tableau.com/app/profile/chris.d.jose/viz/JanusHendersonDashboard/JanuisHendersonOverview",
-    imgSrc: "/src/assets/JHI.png",
+    imgSrc: "/assets/JHI.png",
     imgAlt: "Janus Henderson Case Study",
   },
   {
@@ -132,7 +132,7 @@ const projects = [
     description: "Analyzes the performance of Blue Owl Capital's overall value & affects of the private credit market.",
     tags: ["Financial Modeling", "Data Analysis", "Tableau"],
     url: "https://public.tableau.com/app/profile/chris.d.jose/viz/BlueOwlOverview/BlueOwlOverview",
-    imgSrc: "/src/assets/BOC.png",
+    imgSrc: "/assets/BOC.png",
     imgAlt: "Blue Owl Capital Case Study",
     pdfUrl: blueOwlCapitalPdf,
     pdfLabel: "Read the report",
@@ -142,7 +142,7 @@ const projects = [
     description: "Condensed notes, formulas, and study trackers for CFA Levels I through II.",
     tags: ["Financial Modeling", "Finance", "CFA"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Road-to-CFA-",
-    imgSrc: "/src/assets/CFA.png",
+    imgSrc: "/assets/CFA.png",
     imgAlt: "CFA study materials cover",
   }
 ];

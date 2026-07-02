@@ -16,18 +16,18 @@ export default function Skills() {
   ];
 
   const newsLogos = [
-    { name: 'The Wall Street Journal', src: '/src/assets/Wall_Street_Journal.png', url: 'https://www.wsj.com/' },
-    { name: 'Financial Times', src: '/src/assets/Financial_Times.png', url: 'https://www.ft.com/' },
-    { name: 'The New York Times', src: '/src/assets/NYT-Logo.png', url: 'https://www.nytimes.com/section/business' },
-    { name: 'The Economist', src: '/src/assets/The_Economist_Logo.png', url: 'https://www.economist.com/' },
-    { name: 'Bloomberg', src: '/src/assets/Bloomberg.png', url: 'https://www.bloomberg.com/' },
+    { name: 'The Wall Street Journal', src: '/assets/Wall_Street_Journal.png', url: 'https://www.wsj.com/' },
+    { name: 'Financial Times', src: '/assets/Financial_Times.png', url: 'https://www.ft.com/' },
+    { name: 'The New York Times', src: '/assets/NYT-Logo.png', url: 'https://www.nytimes.com/section/business' },
+    { name: 'The Economist', src: '/assets/The_Economist_Logo.png', url: 'https://www.economist.com/' },
+    { name: 'Bloomberg', src: '/assets/Bloomberg.png', url: 'https://www.bloomberg.com/' },
   ];
 
   const podcastLogos = [
-    { name: 'Morning Brew Daily', src: '/src/assets/Morning_Brew_Daily.png', url: 'https://www.morningbrew.com/stories/morning-brew-podcasts' },
-    { name: 'Bloomberg Daybreak: US', src: '/src/assets/Bloomberg_DayBreak.png', url: 'https://www.bloomberg.com/podcasts' },
-    { name: 'The Rundown', src: '/src/assets/The_Rundown.png', url: 'https://open.spotify.com/show/0VYfS0q26zf0cFc5VuCjwG' },
-    { name: 'The Journal', src: '/src/assets/The_Journal.png', url: 'https://www.wsj.com/podcasts/the-journal' },
+    { name: 'Morning Brew Daily', src: '/assets/Morning_Brew_Daily.png', url: 'https://www.morningbrew.com/stories/morning-brew-podcasts' },
+    { name: 'Bloomberg Daybreak: US', src: '/assets/Bloomberg_DayBreak.png', url: 'https://www.bloomberg.com/podcasts' },
+    { name: 'The Rundown', src: '/assets/The_Rundown.png', url: 'https://open.spotify.com/show/0VYfS0q26zf0cFc5VuCjwG' },
+    { name: 'The Journal', src: '/assets/The_Journal.png', url: 'https://www.wsj.com/podcasts/the-journal' },
   ];
 
   // Updated to reflect the streamlined sections

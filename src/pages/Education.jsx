@@ -77,7 +77,7 @@ export default function Education() {
           {/* Photo */}
           <div className="group overflow-hidden rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 h-64 relative">
             <img
-              src="/src/assets/Grad_Headshot.jpg"
+              src="/assets/Grad_Headshot.jpg"
               alt="Cornell Graduation"
               className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
             />

@@ -115,7 +115,7 @@ export default function Home() {
         <div className="w-full md:w-[45%] flex flex-col items-center">
           <div className="relative mb-8 flex justify-center w-full">
              <img
-              src="/src/assets/Headshot.jpg"
+              src="/assets/Headshot.jpg"
               alt="Chris Castaneda"
               fetchPriority="high"
               className="w-72 h-72 rounded-full object-cover shadow-xl border-4 border-slate-100 dark:border-slate-800"

@@ -42,7 +42,7 @@ export default function About() {
       name: "SWFL Urban Market Analysis",
       tagline: "Listed-home analytics for SWFL with pricing, inventory, and geospatial views.",
       tags: ["Python", "R", "EDA", "Time Series", "GIS"],
-      img: "/src/assets/SWFL.png",
+      img: "/assets/SWFL.png",
       links: {
         pdf: swflUrbanMarketsPdf,
         github: "https://github.com/Chris-D-Jose-Castaneda/SWFL-Real-Estate-Analytical-Project",
@@ -53,7 +53,7 @@ export default function About() {
       name: "Equity Dashboard Analytics",
       tagline: "Incorporates multi-asset monitoring and KPI tracking using a robust database infrastructure.",
       tags: ["Flask & REST APIs", "React", "Supabase", "Auth"],
-      img: "/src/assets/Equity_Analytics.png",
+      img: "/assets/Equity_Analytics.png",
       links: {
         external: "https://equity-dashboard-analytics.vercel.app/login",
       },
@@ -62,7 +62,7 @@ export default function About() {
       name: "Blue Owl Capital Equity Research",
       tagline: "Uses financial statements to create a equity research report built on a FactSet data pipeline.",
       tags: ["FactSet", "3-Statement", "Tableau", "Equities"],
-      img: "/src/assets/BOC.png",
+      img: "/assets/BOC.png",
       links: {
         pdf: blueOwlCapitalPdf,
         github: "https://github.com/Chris-D-Jose-Castaneda/BOC-Report",
@@ -160,7 +160,7 @@ export default function About() {
           {/* Central Photo */}
           <div className="relative z-20 mb-10">
             <img
-              src="/src/assets/Headshot2.png"
+              src="/assets/Headshot2.png"
               alt="Chris Castaneda"
               className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-[4px] border-white/20 dark:border-slate-700 shadow-xl transition-transform duration-500 hover:scale-105"
             />
