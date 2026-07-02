@@ -4,7 +4,8 @@ import { FiAward, FiBookOpen } from 'react-icons/fi';
 
 export default function Education() {
   return (
-    <div className="max-w-5xl mx-auto px-6 pt-28 pb-24 transition-colors duration-300 space-y-24">
+    // Adjusted space-y-24 to space-y-16 for consistency with other pages
+    <div className="max-w-5xl mx-auto px-6 pt-28 pb-24 transition-colors duration-300 space-y-16">
       
       {/* Header Section */}
       <div className="flex flex-col items-center text-center mb-12 mt-8">
@@ -13,7 +14,6 @@ export default function Education() {
         </h1>
           {/* Border matches the #002060 text fill in light mode */}
         <div className="h-1.5 w-16 bg-[#002060] dark:bg-white mx-auto rounded-full" />
-
       </div>
 
       {/* 1. Academic & CFA Section */}

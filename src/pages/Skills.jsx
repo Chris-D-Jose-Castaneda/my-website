@@ -92,8 +92,8 @@ export default function Skills() {
   return (
     <div className="max-w-5xl mx-auto px-6 pt-28 pb-24 transition-colors duration-300 space-y-16">
 
-      {/* Page Header */}
-      <div className="flex flex-col items-center text-center mb-4 mt-8">
+      {/* Page Header - Updated to mb-12 to match Projects.jsx */}
+      <div className="flex flex-col items-center text-center mb-12 mt-8">
         <h1 className="text-4xl md:text-5xl font-extrabold text-[#002060] dark:text-white tracking-tight font-serif mb-4">
           Technical Skills
         </h1>
@@ -113,10 +113,9 @@ export default function Skills() {
         ))}
       </nav>
 
-      {/* Intro Box - Darkened base color, adjusted hex opacity, pure white text, split paragraphs */}
+      {/* Intro Box */}
       <section className="max-w-4xl mx-auto w-full">
-        <div className="relative overflow-hidden rounded-2xl shadow-md bg-[#000a1f] dark:bg-slate-950 px-8 py-12 md:py-14 transition-all duration-300 hover:shadow-xl border border-[#002060]/50 dark:border-slate-800">
-          {/* Update this div to use dark:hidden */}
+        <div className="relative overflow-hidden rounded-2xl shadow-md bg-[#000a1f] dark:bg-slate-900 px-8 py-12 md:py-14 transition-all duration-300 hover:shadow-xl border border-[#002060]/50 dark:border-slate-800">
             <div
               className="absolute inset-0 opacity-[0.08] dark:hidden pointer-events-none rounded-3xl animate-hex-drift"
               style={{

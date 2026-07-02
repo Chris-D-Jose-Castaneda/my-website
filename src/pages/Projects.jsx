@@ -1,29 +1,6 @@
 import React, { useState } from "react";
 import { FiGithub, FiExternalLink, FiBookOpen, FiFileText, FiDownload, FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-// --- PDF Imports ---
-import romeoPdf from "../assets/writing/Shakespeare or Romeo in Love.pdf?url";
-import floridaPantherPdf from "../assets/writing/Florida Panther Report.pdf?url";
-import hurricaneHarmonyPdf from "../assets/writing/Hurricane Harmony.pdf?url";
-import childishnessPdf from "../assets/writing/Childishness or Consequences of Society.pdf?url";
-import kingLearPdf from "../assets/writing/King_Lear_Succession_Op-Ed.pdf?url";
-import shakespeareMuseumPdf from "../assets/writing/Shakespeare_Museum_Final.pdf?url";
-import proteinSecondaryPdf from "../assets/writing/Protein Secondary Structure Report.pdf?url";
-
-import swflUrbanMarketsPdf from "../assets/writing/SWFL Quantitative Analysis of Urban Housing Markets.pdf?url";
-import blueOwlCapitalPdf from "../assets/writing/Blue_Owl_Capital_Report.pdf?url";
-import gradingAnalysisPdf from "../assets/writing/Grading Analysis Report.pdf?url";
-import macroeconomicDashboardPdf from "../assets/writing/Macroeconomic Dashboard Report.pdf?url";
-
-// --- Writing Sample Image Imports ---
-import romeoImg from "../assets/writing/images/Film.png"; 
-import floridaPantherImg from "../assets/writing/images/Panther.png";
-import hurricaneHarmonyImg from "../assets/writing/images/Hurricane.png";
-import childishnessImg from "../assets/writing/images/Childishness.png";
-import kingLearImg from "../assets/writing/images/Op-Ed.png";
-import shakespeareMuseumImg from "../assets/writing/images/Around_The_World.png";
-import proteinSecondaryImg from "../assets/writing/images/Protein.png";
-
 const projects = [
   {
     name: "SWFL Urban Market Analysis V1",
@@ -32,7 +9,7 @@ const projects = [
     url: "https://github.com/Chris-D-Jose-Castaneda/SWFL-Real-Estate-Analytical-Project",
     imgSrc: "/assets/SWFL.png",
     imgAlt: "SWFL Urban Housing analysis cover",
-    pdfUrl: swflUrbanMarketsPdf,
+    pdfUrl: "/assets/writing/SWFL Quantitative Analysis of Urban Housing Markets.pdf",
     pdfLabel: "Read the report",
   },
   {
@@ -74,7 +51,7 @@ const projects = [
     url: "https://github.com/Chris-D-Jose-Castaneda/Lead_Assistant_Grading_Analysis",
     imgSrc: "/assets/CU_clocktower.png",
     imgAlt: "Lead Analysis",
-    pdfUrl: gradingAnalysisPdf,
+    pdfUrl: "/assets/writing/Grading Analysis Report.pdf",
     pdfLabel: "Read the report",
   },
   {
@@ -84,7 +61,7 @@ const projects = [
     url: "https://github.com/Chris-D-Jose-Castaneda/Macro-Credit-Stress-and-Sim",
     imgSrc: "/assets/Macro-Credit Stressboard.png",
     imgAlt: "Macro-Credit Stressboard & CFA",
-    pdfUrl: macroeconomicDashboardPdf,
+    pdfUrl: "/assets/writing/Macroeconomic Dashboard Report.pdf",
     pdfLabel: "Read the report",
   },
   {
@@ -134,7 +111,7 @@ const projects = [
     url: "https://public.tableau.com/app/profile/chris.d.jose/viz/BlueOwlOverview/BlueOwlOverview",
     imgSrc: "/assets/BOC.png",
     imgAlt: "Blue Owl Capital Case Study",
-    pdfUrl: blueOwlCapitalPdf,
+    pdfUrl: "/assets/writing/Blue_Owl_Capital_Report.pdf",
     pdfLabel: "Read the report",
   },
   {
@@ -151,50 +128,50 @@ const writingSamples = [
   {
     title: "Shakespeare or Romeo in Love?",
     description: "A close reading of Romeo and Juliet examining whether Romeo's love is genuine devotion or self-indulgent infatuation.",
-    pdfUrl: romeoPdf,
-    imgSrc: romeoImg,
+    pdfUrl: "/assets/writing/Shakespeare or Romeo in Love.pdf",
+    imgSrc: "/assets/writing/images/Film.png",
     downloadName: "Shakespeare or Romeo in Love.pdf",
   },
   {
     title: "Fall & Rise of the Florida Panther",
     description: "A research piece tracing the Florida panther's near-extinction and the conservation efforts behind its slow recovery.",
-    pdfUrl: floridaPantherPdf,
-    imgSrc: floridaPantherImg,
+    pdfUrl: "/assets/writing/Florida Panther Report.pdf",
+    imgSrc: "/assets/writing/images/Panther.png",
     downloadName: "Florida Panther Report.pdf",
   },
   {
     title: "Hurricane Harmony & Florida Ecology",
     description: "An exploration of how Florida's ecosystems have adapted to, and depend on, the seasonal disruption of hurricanes.",
-    pdfUrl: hurricaneHarmonyPdf,
-    imgSrc: hurricaneHarmonyImg,
+    pdfUrl: "/assets/writing/Hurricane Harmony.pdf",
+    imgSrc: "/assets/writing/images/Hurricane.png",
     downloadName: "Hurricane Harmony.pdf",
   },
   {
     title: "Childishness or Consequences of Society?",
     description: "An analytical essay questioning whether perceived immaturity in literature reflects character flaws or the pressures of a flawed society.",
-    pdfUrl: childishnessPdf,
-    imgSrc: childishnessImg,
+    pdfUrl: "/assets/writing/Childishness or Consequences of Society.pdf",
+    imgSrc: "/assets/writing/images/Childishness.png",
     downloadName: "Childishness or Consequences of Society.pdf",
   },
   {
     title: "Succession: A Reincarnation of Shakespeare's King Lear?",
     description: "An op-ed drawing parallels between the television series Succession and the family power struggles at the heart of King Lear.",
-    pdfUrl: kingLearPdf,
-    imgSrc: kingLearImg,
+    pdfUrl: "/assets/writing/King_Lear_Succession_Op-Ed.pdf",
+    imgSrc: "/assets/writing/images/Op-Ed.png",
     downloadName: "King Lear Succession Op-Ed.pdf",
   },
   {
     title: "Shakespeare Around the World Exhibit",
     description: "A report examining how Shakespeare's work has been adapted, translated, and reinterpreted across global cultures.",
-    pdfUrl: shakespeareMuseumPdf,
-    imgSrc: shakespeareMuseumImg,
+    pdfUrl: "/assets/writing/Shakespeare_Museum_Final.pdf",
+    imgSrc: "/assets/writing/images/Around_The_World.png",
     downloadName: "Shakespeare Museum Final.pdf",
   },
   {
     title: "Protein Secondary Structure Report",
     description: "A scientific report examining alpha helix and beta sheet formation and their role in determining protein function.",
-    pdfUrl: proteinSecondaryPdf,
-    imgSrc: proteinSecondaryImg,
+    pdfUrl: "/assets/writing/Protein Secondary Structure Report.pdf",
+    imgSrc: "/assets/writing/images/Protein.png",
     downloadName: "Protein Secondary Structure Report.pdf",
   },
 ];

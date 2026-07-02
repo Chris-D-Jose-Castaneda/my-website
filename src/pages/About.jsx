@@ -11,11 +11,6 @@ import {
   FileText,
   ExternalLink,
 } from 'lucide-react';
-import tableauIcon from '../assets/tableau-icon.png';
-
-// --- PDF Imports ---
-import swflUrbanMarketsPdf from "../assets/writing/SWFL Quantitative Analysis of Urban Housing Markets.pdf?url";
-import blueOwlCapitalPdf from "../assets/writing/Blue_Owl_Capital_Report.pdf?url";
 
 export default function About() {
   const focusAreas = [
@@ -44,7 +39,7 @@ export default function About() {
       tags: ["Python", "R", "EDA", "Time Series", "GIS"],
       img: "/assets/SWFL.png",
       links: {
-        pdf: swflUrbanMarketsPdf,
+        pdf: "/assets/writing/SWFL Quantitative Analysis of Urban Housing Markets.pdf",
         github: "https://github.com/Chris-D-Jose-Castaneda/SWFL-Real-Estate-Analytical-Project",
         tableau: "https://public.tableau.com/app/profile/chris.d.jose/viz/SWFLDashboard/SWFLRealEstateDashboard",
       },
@@ -64,7 +59,7 @@ export default function About() {
       tags: ["FactSet", "3-Statement", "Tableau", "Equities"],
       img: "/assets/BOC.png",
       links: {
-        pdf: blueOwlCapitalPdf,
+        pdf: "/assets/writing/Blue_Owl_Capital_Report.pdf",
         github: "https://github.com/Chris-D-Jose-Castaneda/BOC-Report",
         tableau: "https://public.tableau.com/app/profile/chris.d.jose/viz/BlueOwlOverview/BlueOwlOverview",
       },
@@ -138,17 +133,16 @@ export default function About() {
         <h1 className="text-4xl md:text-5xl font-extrabold text-[#002060] dark:text-white tracking-tight font-serif mb-4">
           About Me
         </h1>
-        {/* Border matches the #002060 text fill in light mode */}
         <div className="h-1.5 w-16 bg-[#002060] dark:bg-white mx-auto rounded-full" />
       </div>
 
-{/* Central Bio Section */}
+      {/* Central Bio Section */}
       <div className="relative flex flex-col items-center mb-24 max-w-4xl mx-auto">
         
-        {/* Bio Card: Added overflow-hidden to wrap pattern, and matched dark mode bg/border to Skills */}
+        {/* Bio Card */}
         <div className="relative w-full overflow-hidden bg-[#000a1f] dark:bg-slate-900 p-8 md:p-14 rounded-3xl shadow-xl border border-[#002060]/50 dark:border-slate-800 flex flex-col items-center text-center transition-all duration-300">
           
-          {/* Subtle Hexagon Background Pattern: Added dark:hidden to remove in dark mode */}
+          {/* Subtle Hexagon Background Pattern */}
           <div
             className="absolute inset-0 opacity-[0.08] dark:hidden pointer-events-none"
             style={{
@@ -178,6 +172,7 @@ export default function About() {
           </div>
         </div>
       </div>
+
       {/* Main Content Sections */}
       <div className="space-y-16">
 
@@ -272,7 +267,7 @@ export default function About() {
                         className="p-2 rounded-full hover:bg-blue-600 dark:hover:bg-[#2ab5b5] transition-colors bg-slate-50 dark:bg-slate-800 flex items-center justify-center"
                       >
                         <img
-                          src={tableauIcon}
+                          src="/assets/tableau-icon.png"
                           alt="Tableau"
                           className="w-4 h-4 object-contain opacity-70 group-hover:opacity-100"
                         />
@@ -332,7 +327,6 @@ export default function About() {
                     key={item.title}
                     className="bg-white dark:bg-slate-800/50 p-8 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center transition-transform hover:-translate-y-1 hover:shadow-md hover:border-blue-600/30 dark:hover:border-[#2ab5b5]/50"
                   >
-                    {/* Icon color matches the navy/teal theme */}
                     <Icon className="w-6 h-6 text-[#002060] dark:text-[#2ab5b5] mb-3" strokeWidth={1.75} />
                     
                     <p className="font-bold text-[#002060] dark:text-white text-sm mb-4 tracking-widest uppercase font-serif">
@@ -346,12 +340,10 @@ export default function About() {
                 );
               })}
 
-
             {/* Bottom row: Cooking carousel */}
             <div className="bg-slate-50 dark:bg-slate-800/50 p-8 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col items-center text-center relative transition-transform hover:-translate-y-1">
               {(() => {
                 const Icon = cookingSlides[cookingIndex].icon;
-                // Icon color matches the navy/teal theme
                 return <Icon className="w-6 h-6 text-[#002060] dark:text-[#2ab5b5] mb-3" strokeWidth={1.75} />;
               })()}
 
@@ -360,7 +352,6 @@ export default function About() {
                   type="button"
                   onClick={() => cycle(setCookingIndex, cookingSlides.length, -1)}
                   aria-label="Previous cooking category"
-                  // Icon matches fill color
                   className="text-[#002060] dark:text-[#2ab5b5] hover:opacity-70 transition-opacity p-2"
                 >
                   <ChevronLeft className="w-5 h-5" />
