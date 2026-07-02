@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaPlay, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPlay, FaMapMarkerAlt, FaTrophy } from 'react-icons/fa';
 import SocialLinks from '../components/SocialLinks';
 import GitHubContributions from '../components/GitHubContributions';
 
@@ -76,7 +76,6 @@ export default function Home() {
   const TRACK_ID = "2xdppsYDnWSZKOhqwbje2V";
 
   return (
-    // Changed pb-24 to pb-8 to pull the footer up
     <div className="max-w-4xl mx-auto px-6 pt-32 pb-8 transition-colors duration-300">
       
       {/* Hero Section */}
@@ -90,7 +89,7 @@ export default function Home() {
             Chris Jose Castaneda
           </h1>
 
-          {/* Animated role line, replaces the old static tagline */}
+          {/* Animated role line */}
           <TypingRole />
           
           <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-8 font-serif">
@@ -129,7 +128,7 @@ export default function Home() {
                 className="w-full flex items-center justify-center px-6 py-4 bg-[#002060] dark:bg-slate-800 text-white text-xs tracking-[0.2em] uppercase font-bold rounded-full hover:bg-[#115e59] transition-colors shadow-lg"
               >
                 <FaPlay className="mr-3" />
-                Audio Profile
+                What I'm Listening To
               </button>
             ) : (
               <div className="w-full shadow-2xl rounded-2xl overflow-hidden bg-slate-900">
@@ -143,6 +142,13 @@ export default function Home() {
                 />
               </div>
             )}
+
+            {/* World Cup Note */}
+            <div className="mt-5 flex items-center justify-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+              <FaTrophy className="text-[#002060] dark:text-[#2ab5b5] text-sm shrink-0" />
+              <span>World Cup Pick: France</span>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -165,7 +171,7 @@ export default function Home() {
         ))}
       </section>
 
-      {/* GitHub Section - Reduced padding from py-16 to pt-12 pb-4 */}
+      {/* GitHub Section */}
       <section className="pt-12 pb-4 border-t border-slate-200 dark:border-slate-800">
         <GitHubContributions />
       </section>
