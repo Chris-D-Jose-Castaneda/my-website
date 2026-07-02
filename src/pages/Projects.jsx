@@ -3,10 +3,12 @@ import { FiGithub, FiExternalLink, FiBookOpen, FiFileText, FiDownload, FiChevron
 
 const projects = [
   {
-    name: "SWFL Urban Market Analysis V1",
+    name: "SWFL Urban Market Analysis",
     description: "Listed-home analytics for April 2025 with pricing, inventory, and geospatial views.",
     tags: ["Data Analysis", "Python", "EDA", "Time Series", "GIS"],
     url: "https://github.com/Chris-D-Jose-Castaneda/SWFL-Real-Estate-Analytical-Project",
+    tableauUrl: "https://public.tableau.com/app/profile/chris.d.jose/viz/SWFLDashboard/SWFLRealEstateDashboard",
+    shinyUrl: "https://chris-jose-castaneda.shinyapps.io/SWFL_Quant_Analysis/",
     imgSrc: "/assets/SWFL.png",
     imgAlt: "SWFL Urban Housing analysis cover",
     pdfUrl: "/assets/writing/SWFL Quantitative Analysis of Urban Housing Markets.pdf",
@@ -41,6 +43,7 @@ const projects = [
     description: "Match outcome and table projections for the 2025/26 season.",
     tags: ["Machine Learning", "Data Analysis", "Python", "Sports Analytics"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Premier_League_2025_26_Prediction",
+    tableauUrl: "https://public.tableau.com/app/profile/chris.d.jose/viz/EPL_17718285429440/NovEPL",
     imgSrc: "/assets/Cole_Palmer.png",
     imgAlt: "Premier League model",
   },
@@ -49,6 +52,8 @@ const projects = [
     description: "Track, analyze, and visualize grading data from a spreadsheet modeling course from the past 5 semesters.",
     tags: ["Data Analysis", "Machine Learning", "Python", "SQL"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Lead_Assistant_Grading_Analysis",
+    streamlitUrl: "https://biz-comp.streamlit.app/",
+    tableauUrl: "https://public.tableau.com/app/profile/chris.d.jose/viz/Exams_17715565581320/Dashboard1",
     imgSrc: "/assets/CU_clocktower.png",
     imgAlt: "Lead Analysis",
     pdfUrl: "/assets/writing/Grading Analysis Report.pdf",
@@ -76,7 +81,7 @@ const projects = [
     name: "My Website",
     description: "Version III built using React, Vite, TailwindCSS, and React Router.",
     tags: ["Web Development", "React", "TailwindCSS"],
-    url: "https://github.com/Chris-D-Jose-Castaneda/my-portfolio",
+    url: "https://github.com/Chris-D-Jose-Castaneda/my-website",
     imgSrc: "/assets/portfolio.png",
     imgAlt: "Portfolio Screenshot",
   },
@@ -92,15 +97,17 @@ const projects = [
     name: "Commodities Oil Tracking",
     description: "Analyzing the oil markets and tracking commodity prices & how it affects my portfolio as well as expected outcomes.",
     tags: ["Financial Modeling", "Data Analysis", "Python", "Monte Carlo"],
-    url: "https://github.com/Chris-D-Jose-Castaneda/SWFL-COST-Scenario/blob/main/Retail%20Fuel%20Pricing%20Report.pdf/",
+    url: "https://github.com/Chris-D-Jose-Castaneda/SWFL-COST-Scenario",
     imgSrc: "/assets/Oil.png",
     imgAlt: "Oil Tracking Analysis",
+    pdfUrl: "/assets/writing/Retail Fuel Pricing Report.pdf",
+    pdfLabel: "Read the report",
   },
   {
     name: "Janus Henderson Case Study",
     description: "Analyzes the performance of Janus Henderson's overall value.",
     tags: ["Financial Modeling", "Data Analysis", "Tableau"],
-    url: "https://public.tableau.com/app/profile/chris.d.jose/viz/JanusHendersonDashboard/JanuisHendersonOverview",
+    tableauUrl: "https://public.tableau.com/app/profile/chris.d.jose/viz/JanusHendersonDashboard/JanuisHendersonOverview",
     imgSrc: "/assets/JHI.png",
     imgAlt: "Janus Henderson Case Study",
   },
@@ -108,7 +115,8 @@ const projects = [
     name: "Blue Owl Capital Case Study",
     description: "Analyzes the performance of Blue Owl Capital's overall value & affects of the private credit market.",
     tags: ["Financial Modeling", "Data Analysis", "Tableau"],
-    url: "https://public.tableau.com/app/profile/chris.d.jose/viz/BlueOwlOverview/BlueOwlOverview",
+    url: "https://github.com/Chris-D-Jose-Castaneda/BOC-Report",
+    tableauUrl: "https://public.tableau.com/app/profile/chris.d.jose/viz/BlueOwlOverview/BlueOwlOverview",
     imgSrc: "/assets/BOC.png",
     imgAlt: "Blue Owl Capital Case Study",
     pdfUrl: "/assets/writing/Blue_Owl_Capital_Report.pdf",
@@ -245,7 +253,7 @@ export default function Projects() {
               className="group block bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-teal-700/30 dark:hover:border-teal-400/50"
             >
               <a
-                href={proj.url}
+                href={proj.url || proj.tableauUrl || proj.pdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block relative"
@@ -259,7 +267,7 @@ export default function Projects() {
               </a>
               <div className="p-6 flex flex-col items-center text-center">
                 <a
-                  href={proj.url}
+                  href={proj.url || proj.tableauUrl || proj.pdfUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-lg font-bold text-[#002060] dark:text-white hover:text-teal-700 dark:hover:text-teal-400 transition-colors leading-snug mb-3"
@@ -267,6 +275,7 @@ export default function Projects() {
                   {proj.name}
                 </a>
 
+                {/* Updated Links Section for PDF, GitHub, Tableau, Shiny, and Streamlit */}
                 <div className="flex items-center justify-center gap-4 mb-4">
                   {proj.pdfUrl && (
                     <a
@@ -279,15 +288,54 @@ export default function Projects() {
                       <FiFileText />
                     </a>
                   )}
-                  <a
-                    href={proj.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title={proj.url.includes("github.com") ? "View on GitHub" : "View project"}
-                    className={ICON_CLASSES}
-                  >
-                    {IconFor(proj.url)}
-                  </a>
+                  {proj.tableauUrl && (
+                    <a
+                      href={proj.tableauUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="View Tableau Dashboard"
+                      className="flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity"
+                    >
+                      <img
+                        src="/assets/tableau-icon.png"
+                        alt="Tableau"
+                        className="w-5 h-5 object-contain"
+                      />
+                    </a>
+                  )}
+                  {proj.shinyUrl && (
+                    <a
+                      href={proj.shinyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="View R-Shiny App"
+                      className={ICON_CLASSES}
+                    >
+                      <FiExternalLink />
+                    </a>
+                  )}
+                  {proj.streamlitUrl && (
+                    <a
+                      href={proj.streamlitUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="View Streamlit App"
+                      className={ICON_CLASSES}
+                    >
+                      <FiExternalLink />
+                    </a>
+                  )}
+                  {proj.url && (
+                    <a
+                      href={proj.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={proj.url.includes("github.com") ? "View on GitHub" : "View project"}
+                      className={ICON_CLASSES}
+                    >
+                      {IconFor(proj.url)}
+                    </a>
+                  )}
                 </div>
 
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">

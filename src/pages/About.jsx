@@ -8,9 +8,8 @@ import {
   Sprout,
   ChevronLeft,
   ChevronRight,
-  FileText,
-  ExternalLink,
 } from 'lucide-react';
+import { FiGithub, FiExternalLink, FiFileText } from "react-icons/fi";
 
 export default function About() {
   const focusAreas = [
@@ -42,6 +41,7 @@ export default function About() {
         pdf: "/assets/writing/SWFL Quantitative Analysis of Urban Housing Markets.pdf",
         github: "https://github.com/Chris-D-Jose-Castaneda/SWFL-Real-Estate-Analytical-Project",
         tableau: "https://public.tableau.com/app/profile/chris.d.jose/viz/SWFLDashboard/SWFLRealEstateDashboard",
+        shiny: "https://chris-jose-castaneda.shinyapps.io/SWFL_Quant_Analysis/",
       },
     },
     {
@@ -50,7 +50,7 @@ export default function About() {
       tags: ["Flask & REST APIs", "React", "Supabase", "Auth"],
       img: "/assets/Equity_Analytics.png",
       links: {
-        external: "https://equity-dashboard-analytics.vercel.app/login",
+        external: "https://equity-dashboard-analytics.vercel.app/",
       },
     },
     {
@@ -242,19 +242,7 @@ export default function About() {
                         aria-label="Read the report (PDF)"
                         className="p-2 rounded-full text-[#002060] dark:text-slate-300 hover:text-white hover:bg-blue-600 dark:hover:bg-[#2ab5b5] dark:hover:text-slate-950 transition-colors bg-slate-50 dark:bg-slate-800"
                       >
-                        <FileText className="w-4 h-4" strokeWidth={1.75} />
-                      </a>
-                    )}
-                    {project.links.github && (
-                      <a
-                        href={project.links.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="View on GitHub"
-                        aria-label="View on GitHub"
-                        className="p-2 rounded-full text-[#002060] dark:text-slate-300 hover:text-white hover:bg-blue-600 dark:hover:bg-[#2ab5b5] dark:hover:text-slate-950 transition-colors bg-slate-50 dark:bg-slate-800"
-                      >
-                        <ExternalLink className="w-4 h-4" strokeWidth={1.75} />
+                        <FiFileText className="w-4 h-4" />
                       </a>
                     )}
                     {project.links.tableau && (
@@ -273,6 +261,30 @@ export default function About() {
                         />
                       </a>
                     )}
+                    {project.links.shiny && (
+                      <a
+                        href={project.links.shiny}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="View R-Shiny App"
+                        aria-label="View R-Shiny App"
+                        className="p-2 rounded-full text-[#002060] dark:text-slate-300 hover:text-white hover:bg-blue-600 dark:hover:bg-[#2ab5b5] dark:hover:text-slate-950 transition-colors bg-slate-50 dark:bg-slate-800"
+                      >
+                        <FiExternalLink className="w-4 h-4" />
+                      </a>
+                    )}
+                    {project.links.github && (
+                      <a
+                        href={project.links.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="View on GitHub"
+                        aria-label="View on GitHub"
+                        className="p-2 rounded-full text-[#002060] dark:text-slate-300 hover:text-white hover:bg-blue-600 dark:hover:bg-[#2ab5b5] dark:hover:text-slate-950 transition-colors bg-slate-50 dark:bg-slate-800"
+                      >
+                        <FiGithub className="w-4 h-4" />
+                      </a>
+                    )}
                     {project.links.external && (
                       <a
                         href={project.links.external}
@@ -282,7 +294,7 @@ export default function About() {
                         aria-label="Open live app"
                         className="p-2 rounded-full text-[#002060] dark:text-slate-300 hover:text-white hover:bg-blue-600 dark:hover:bg-[#2ab5b5] dark:hover:text-slate-950 transition-colors bg-slate-50 dark:bg-slate-800"
                       >
-                        <ExternalLink className="w-4 h-4" strokeWidth={1.75} />
+                        <FiExternalLink className="w-4 h-4" />
                       </a>
                     )}
                   </div>

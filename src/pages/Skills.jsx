@@ -30,11 +30,10 @@ export default function Skills() {
     { name: 'The Journal', src: '/assets/The_Journal.png', url: 'https://www.wsj.com/podcasts/the-journal' },
   ];
 
-  // Updated to reflect the streamlined sections
   const navSections = [
     { id: 'core-competencies', label: 'Core Competencies' },
     { id: 'technical-proficiencies', label: 'Proficiencies' },
-    { id: 'finance-data', label: 'Financial Platforms' },
+    { id: 'finance-data', label: 'Finance' },
     { id: 'daily-read-listen', label: 'Daily Read & Listen' },
   ];
 
@@ -92,7 +91,7 @@ export default function Skills() {
   return (
     <div className="max-w-5xl mx-auto px-6 pt-28 pb-24 transition-colors duration-300 space-y-16">
 
-      {/* Page Header - Updated to mb-12 to match Projects.jsx */}
+      {/* Page Header */}
       <div className="flex flex-col items-center text-center mb-12 mt-8">
         <h1 className="text-4xl md:text-5xl font-extrabold text-[#002060] dark:text-white tracking-tight font-serif mb-4">
           Technical Skills
@@ -100,8 +99,8 @@ export default function Skills() {
         <div className="h-1.5 w-16 bg-[#002060] dark:bg-white mx-auto rounded-full" />
       </div>
 
-      {/* Jump Nav */}
-      <nav className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
+      {/* Jump Nav - Added mb-10 to match the spacing in Projects.jsx */}
+      <nav className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto mb-10">
         {navSections.map((s) => (
           <a
             key={s.id}
