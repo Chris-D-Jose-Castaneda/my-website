@@ -93,7 +93,7 @@ const projects = [
     description: "Analyzing the oil markets and tracking commodity prices & how it affects my portfolio as well as expected outcomes.",
     tags: ["Financial Modeling", "Data Analysis", "Python", "Monte Carlo"],
     url: "https://github.com/Chris-D-Jose-Castaneda/SWFL-COST-Scenario/blob/main/Retail%20Fuel%20Pricing%20Report.pdf/",
-    imgSrc: "/assets/oil.png",
+    imgSrc: "/assets/Oil.png",
     imgAlt: "Oil Tracking Analysis",
   },
   {
