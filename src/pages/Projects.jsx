@@ -25,7 +25,7 @@ const projects = [
   {
     name: "Equity Dashboard Analytics",
     description: "Incorporates multi-asset monitoring and KPI tracking using a robust database infrastructure.",
-    tags: ["Web Development", "Financial Modeling", "React", "APIs"],
+    tags: ["Web Development", "Finance", "React", "APIs"],
     url: "https://equity-dashboard-analytics.vercel.app/",
     imgSrc: "/assets/Equity_Analytics.png",
     imgAlt: "Equity Dashboard Analytics",
@@ -33,7 +33,7 @@ const projects = [
   {
     name: "Valuation Screener",
     description: "Streamlit app to load Excel universes and screen by EV/EBITDA, ROE, and more.",
-    tags: ["Financial Modeling", "Data Analysis", "Python", "Excel"],
+    tags: ["Finance", "Data Analysis", "Python", "Excel"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Valuation-Screener",
     imgSrc: "/assets/Valuation_Screener.png",
     imgAlt: "Valuation Screener dashboard",
@@ -62,7 +62,7 @@ const projects = [
   {
     name: "Macro-Credit Stress & Sim",
     description: "FRED/Eikon pipelines, stress scoring, and scenario simulations with a Streamlit UI.",
-    tags: ["Financial Modeling", "Data Analysis", "Python"],
+    tags: ["Finance", "Data Analysis", "Python"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Macro-Credit-Stress-and-Sim",
     imgSrc: "/assets/Macro-Credit Stressboard.png",
     imgAlt: "Macro-Credit Stressboard & CFA",
@@ -72,7 +72,7 @@ const projects = [
   {
     name: "Cross-Asset Regime Research",
     description: "Regime detection and cross-asset analytics with FRED/Eikon/Yfinance pipelines and a Streamlit UI.",
-    tags: ["Financial Modeling", "Data Analysis", "Python"],
+    tags: ["Finance", "Data Analysis", "Python"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Cross-Asset-Regime-Research",
     imgSrc: "/assets/Macro_Credit_Radar.png",
     imgAlt: "Cross-Asset Regime Research",
@@ -96,7 +96,7 @@ const projects = [
   {
     name: "Commodities Oil Tracking",
     description: "Analyzing the oil markets and tracking commodity prices & how it affects my my local retail gas price as well as expected outcomes.",
-    tags: ["Financial Modeling", "Data Analysis", "Python", "Monte Carlo"],
+    tags: ["Finance", "Data Analysis", "Python", "Monte Carlo"],
     url: "https://github.com/Chris-D-Jose-Castaneda/SWFL-COST-Scenario",
     imgSrc: "/assets/Oil.png",
     imgAlt: "Oil Tracking Analysis",
@@ -106,7 +106,7 @@ const projects = [
   {
     name: "Janus Henderson Case Study",
     description: "Analyzes the performance of Janus Henderson's overall value.",
-    tags: ["Financial Modeling", "Data Analysis", "Tableau"],
+    tags: ["Finance", "Data Analysis", "Tableau"],
     tableauUrl: "https://public.tableau.com/app/profile/chris.d.jose/viz/JanusHendersonDashboard/JanuisHendersonOverview",
     imgSrc: "/assets/JHI.png",
     imgAlt: "Janus Henderson Case Study",
@@ -114,7 +114,7 @@ const projects = [
   {
     name: "Blue Owl Capital Case Study",
     description: "Analyzes the performance of Blue Owl Capital's overall value & affects of the private credit market.",
-    tags: ["Financial Modeling", "Data Analysis", "Tableau"],
+    tags: ["Finance", "Data Analysis", "Tableau"],
     url: "https://github.com/Chris-D-Jose-Castaneda/BOC-Report",
     tableauUrl: "https://public.tableau.com/app/profile/chris.d.jose/viz/BlueOwlOverview/BlueOwlOverview",
     imgSrc: "/assets/BOC.png",
@@ -125,7 +125,7 @@ const projects = [
   {
     name: "Road to CFA",
     description: "Condensed notes, formulas, and study trackers for CFA Levels I through II.",
-    tags: ["Financial Modeling", "Finance", "CFA"],
+    tags: ["Finance", "CFA"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Road-to-CFA-",
     imgSrc: "/assets/CFA.png",
     imgAlt: "CFA study materials cover",
@@ -188,7 +188,7 @@ const categories = [
   "All",
   "Data Analysis",
   "Machine Learning",
-  "Financial Modeling",
+  "Finance",
   "Web Development"
 ];
 
