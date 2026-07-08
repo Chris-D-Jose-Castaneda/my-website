@@ -48,8 +48,8 @@ const projects = [
     imgAlt: "Premier League model",
   },
   {
-    name: "Grading Analysis",
-    description: "Track, analyze, and visualize grading data from a spreadsheet modeling course from the past 5 semesters.",
+    name: "Research: Grading Analysis",
+    description: "Here is an example of tracking, analyzing, and visualizing coursedata from a spreadsheet modeling course from 2023-2025. Conducted analysis on a quantitaive analysis course as well.",
     tags: ["Data Analysis", "Machine Learning", "Python", "SQL"],
     url: "https://github.com/Chris-D-Jose-Castaneda/Lead_Assistant_Grading_Analysis",
     streamlitUrl: "https://biz-comp.streamlit.app/",
