@@ -168,7 +168,9 @@ export default function About() {
           
           <p className="mb-10 text-lg md:text-xl text-blue-50/95 dark:text-slate-300 leading-relaxed font-serif max-w-3xl relative z-10">
           Driven by a deep curiosity to understand the greater picture behind complex data, I use quantitative analysis to explore historical case studies, 
-          alternative investments, and market arbitrage. Outside of my professional role, 
+          alternative investments, and market arbitrage for future opportunities. 
+          
+          Outside of my professional role, 
           
           I apply this mindset to soccer by leveraging statistical modelling to predict English Premier League, Champions League, and upcoming 
           World Cup quarter final match outcomes.          
