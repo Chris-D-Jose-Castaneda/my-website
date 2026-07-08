@@ -4,7 +4,7 @@ import { FiGithub, FiExternalLink, FiBookOpen, FiFileText, FiDownload, FiChevron
 const projects = [
   {
     name: "SWFL Urban Market Analysis",
-    description: "Listed-home analytics for April 2025 with pricing, inventory, and geospatial views.",
+    description: "Listed-home analytics for April 2025 with pricing, inventory, and geospatial views. This is for reproducable results. A closed-source version uses more accurate data regarding securities",
     tags: ["Data Analysis", "Python", "EDA", "Time Series", "GIS"],
     url: "https://github.com/Chris-D-Jose-Castaneda/SWFL-Real-Estate-Analytical-Project",
     tableauUrl: "https://public.tableau.com/app/profile/chris.d.jose/viz/SWFLDashboard/SWFLRealEstateDashboard",
