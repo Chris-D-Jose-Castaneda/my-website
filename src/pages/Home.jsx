@@ -97,7 +97,7 @@ export default function Home() {
           </p>
           
           <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-10">
-            {['Programming', 'Data Visualization', 'Statistical Modeling', 'Equity Research'].map(skill => (
+            {['Programming', 'Data Visualization', 'Statistical Modeling', 'Research'].map(skill => (
               <span key={skill} className="px-3 py-1 bg-transparent text-[#002060] dark:text-slate-300 text-[11px] font-bold uppercase tracking-widest border border-slate-300 dark:border-slate-700 rounded-sm">
                 {skill}
               </span>
