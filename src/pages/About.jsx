@@ -161,10 +161,18 @@ export default function About() {
           </div>
 
           <p className="mb-6 text-lg md:text-xl text-blue-50/95 dark:text-slate-300 leading-relaxed font-serif max-w-3xl relative z-10">
-            I'm a financial and statistical analyst based in Southwest Florida. My background in statistics from Cornell, paired with hands-on experience across financial operations, sits at the intersection of high finance and data engineering.
-          </p>
+            I am an Analyst based in Southwest Florida with a foundational background in statistics from Cornell University. 
+            My experience bridges financial operations and data analytics, focusing on streamlining revenue reconciliation workflows and analyzing data
+            across multiple sectors to identify underlying patterns.
+        </p>
+          
           <p className="mb-10 text-lg md:text-xl text-blue-50/95 dark:text-slate-300 leading-relaxed font-serif max-w-3xl relative z-10">
-            I leverage Python, SQL, and financial modeling to turn data into decisions. I am deeply interested in quantitative research, particularly predicting top-league soccer and Champions League outcomes using Random Forest algorithms as I look toward the upcoming World Cup.
+          Driven by a deep curiosity to understand the greater picture behind complex data, I use quantitative analysis to explore historical case studies, 
+          alternative investments, and market arbitrage. Outside of my professional role, 
+          
+          I apply this mindset to soccer by leveraging statistical modelling to predict English Premier League, Champions League, and upcoming 
+          World Cup quarter final match outcomes.          
+          
           </p>
 
           <div className="relative z-10 inline-block px-8 py-3.5 bg-slate-100 dark:bg-slate-200 text-[#002060] font-serif text-[13px] md:text-sm tracking-[0.2em] uppercase font-bold rounded-full shadow-lg transition-transform hover:-translate-y-0.5 hover:shadow-xl hover:bg-white dark:hover:bg-white">
