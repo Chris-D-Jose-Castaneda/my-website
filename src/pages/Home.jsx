@@ -93,7 +93,7 @@ export default function Home() {
           <TypingRole />
           
           <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-8 font-serif">
-            Analyzing complex market dynamics requires rigorous statistical modeling. I bridge financial metrics with scalable reporting workflows.  
+            I leverage statistical modeling to transform data into actionable reports and automated workflows.  
           </p>
           
           <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-10">
